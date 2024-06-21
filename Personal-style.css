@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: black;
+}
+
+nav a {
+  transition: all 200ms ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+nav, .class-nav {
+  display: flex;
+
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+.class-nav {
+  text-decoration: none;
+  list-style: none;
+  font-size: 24px;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  background-color: #888888;
+  height: 2px;
+  width: 0%;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+nav a:hover:before {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #888888;
+}
+
+.nav-logo {
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: -9px 3px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-logo:hover {
+  cursor: default;
+
+}
+
+img {
+  height: 500px;
+}
+
+/*
+Section Biogrpahy
+*/
+section {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 70px;
+}
+
+#Biography {
+  display: flex;
+  gap: 67px;
+}
+
+.picture-hand img {
+  height: 400px;
+}
+
+.Biography-txt h1 {
+  text-align: center;
+}
+
+.Biography-txt p {
+  text-align: center;
+}
+
+.drop-down {
+  width: 600px;
+}
+
+.drop-down li {
+  list-style: none;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(203, 203, 203, 0.9);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.drop-down li label {
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+label:before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.drop-down .Biography-p {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 700ms, padding 700ms;
+}
+
+.drop-down input[type="checkbox"]:checked + label + .Biography-p {
+  max-height: 400px;
+  padding: 10px 10px;
+}
+
+.drop-down input[type="checkbox"]:checked + label:before {
+  content: '-';
+}
+
+
+/*Education*/
+#Education {
+  margin-top: 240px;
+}
+
+.section2 {
+  display: flex;
+}
+
+.education-header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.Education-p {
+  text-align: center;
+  padding: 20px;
+}
+
+.drop-down .Education-p {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 700ms, padding 700ms;
+}
+
+.drop-down input[type="checkbox"]:checked + label + .Education-p {
+  max-height: 400px;
+  padding: 10px 10px;
+}
+
+.pic2-education {
+  padding-left: 55px;
+}
+
+
+/*Hobby*/
+
+#Hobby {
+  margin-top: 240px;
+}
+
+.section3 {
+  display: flex;
+}
+
+.Hobby-header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.Hobby-p {
+  text-align: center;
+  padding: 20px;
+}
+
+.drop-down .Hobby-p {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 700ms, padding 700ms;
+}
+
+.drop-down input[type="checkbox"]:checked + label + .Hobby-p {
+  max-height: 400px;
+  padding: 10px 10px;
+}
+
+/*Contact*/
+.contact-div{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+#feather-picture{
+ height: 350px;
+  margin-top: 100px;
+}
+.icons {
+  text-align: center;
+
+}
+
+.fa {
+  padding: 30px;
+  margin: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(203, 203, 203, 0.9);
+  border-radius: 100px;
+}
+
+.fa:hover {
+  color: grey;
+  opacity: 0.5;
+}
+
+.icons {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.icons h1 {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
